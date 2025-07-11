@@ -19,7 +19,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Button } from './ui/button';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useCreateRoom } from '@/http/types/use-create-room';
+import { useCreateRoom } from '@/http/use-create-room';
 
 const createRoomSchema = z.object({
   name: z.string().min(3, { message: 'Inclua no mínimo 3 caracteres' }),

@@ -9,7 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 import { dayjs } from '@/lib/format-relative-date';
 import { Badge } from './ui/badge';
-import { useRooms } from '@/http/types/use-rooms';
+import { useRooms } from '@/http/use-rooms';
 
 export function RoomList() {
   const { data, isLoading } = useRooms();
